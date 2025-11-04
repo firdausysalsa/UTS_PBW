@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pendidikan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Riwayat Pendidikan</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tingkat</th>
+                    <th>Nama Sekolah</th>
+                    <th>Tahun Lulus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SD</td>
+                    <td>SDN Cikondang 1</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>SMP</td>
+                    <td>SMPN 1 Sumedang</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>SMA</td>
+                    <td>SMAN 2 Sumedang</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Perguruan Tinggi</td>
+                    <td>Universitas Widyatama</td>
+                    <td>Ongoing</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>© 2025 Praktikum Web Dasar</p>
+    </footer>
+</body>
+<style>
+    /* Mengatur seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Jenis font */
+    background-color: #3a4a6e; /* Warna latar belakang biru tua */
+    display: flex;
+    flex-direction: column; /* Menumpuk konten secara vertikal */
+    justify-content: center; /* Menengahkan secara vertikal */
+    align-items: center; /* Menengahkan secara horizontal */
+    min-height: 100vh; /* Tinggi minimal 1 layar penuh */
+    margin: 0;
+    color: #f0f0f0; /* Warna teks default (untuk footer) */
+}
+
+/* Mengatur "kartu" pembungkus */
+.container {
+    width: 80%;
+    max-width: 800px; /* Lebar maksimum */
+    background-color: #eaf0f6; /* Warna kartu biru muda */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Memberi bayangan */
+    overflow: hidden; /* Memastikan tabel tidak keluar dari sudut */
+    margin-bottom: 20px; /* Jarak ke footer */
+}
+
+/* Mengatur Judul "Riwayat Pendidikan" */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Warna teks judul */
+    padding: 25px 0 10px 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Membuat garis bawah kecil di bawah judul */
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #4a69bd; /* Warna biru aksen */
+    margin: 8px auto 0;
+}
+
+/* Mengatur tabel */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan spasi antar sel */
+}
+
+/* Mengatur sel header (th) dan sel data (td) */
+th, td {
+    padding: 16px 25px; /* Jarak di dalam sel */
+    text-align: left; /* Teks rata kiri */
+    color: #333; /* Warna teks dalam tabel */
+}
+
+/* Mengatur baris header tabel (Tingkat, Nama Sekolah, dst.) */
+thead th {
+    background-color: #4a69bd; /* Latar belakang biru */
+    color: #ffffff; /* Teks putih */
+    font-weight: 600;
+}
+
+/* Mengatur baris data di dalam body tabel */
+tbody tr {
+    background-color: #eaf0f6; /* Warna latar belakang baris */
+    border-top: 1px solid #d8dde4; /* Garis pemisah tipis */
+}
+
+/* Menghilangkan garis pemisah untuk baris pertama */
+tbody tr:first-child {
+    border-top: none;
+}
+
+/* Mengatur footer (copyright) */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #c0c8d4; /* Warna teks footer agar sedikit pudar */
+}
+</style>
+</html>

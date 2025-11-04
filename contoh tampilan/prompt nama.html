@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sapaan dengan Prompt</title>
+    <script>
+        // Script akan dijalankan saat halaman selesai dimuat
+        window.onload = function() {
+            // Tampilkan kotak prompt untuk meminta nama pengguna
+            var nama = prompt("Masukkan nama Anda:");
+            // Jika pengguna memasukkan sesuatu (tidak membatalkan)
+            if (nama) {
+                alert("Halo, " + nama + "! Selamat datang di website saya!");
+            } else {
+                alert("Halo, selamat datang di website saya!");
+            }
+        };
+    </script>
+</head>
+</html>
